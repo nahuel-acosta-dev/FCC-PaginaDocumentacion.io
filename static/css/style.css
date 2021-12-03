@@ -1,0 +1,203 @@
+body{
+    width: 100vw;
+    height:100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+/*SIDEBAR*/
+.list-group{
+    width: 18.75em;
+    height: 100vh;
+    border-right: 2px solid black;
+    margin-right: 30px;
+    position:fixed;
+    background-color: black;
+}
+
+.list-group > header{
+    text-align: center;
+}
+
+h1 > img{
+    margin-right: 20px;
+}
+
+h1{
+    font-size: 1.5em;
+    height: 3em;
+    margin-bottom: 0;
+}
+
+.list-group-item{
+    background-color: rgb(40, 130, 146);
+    color: white;
+}
+
+.list-tit{
+    font-size: 2.5em;
+    color: black;
+    font-family: 'Indie Flower', cursive;
+    padding-top: 30px;
+    animation-name: name-love;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes name-love{
+    10%{
+        color: fuchsia;
+    }
+
+    40%{
+        color:aqua;
+    }
+
+    70%{
+        color:darksalmon;
+    }
+
+    100%{
+        color:beige;
+    }
+}
+
+nav{
+    overflow-y: scroll;
+    margin-right: 0;
+}
+
+div:nth-child(1){
+    display: flex;
+}
+.scrollspy-example{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+a > span{
+    font-weight: bold;
+}
+
+/*FIN SIDEBAR*/
+
+/*CONTENT*/
+main{
+    color: white;
+}
+.scrollspy-example{
+    width: 90vw;
+    margin-left: 320px;
+}
+
+
+p{
+    width: 95%;
+}
+
+#remarcar{
+background-image: linear-gradient(
+    rgba(23, 245, 178, 0.705),
+    rgba(166, 102, 196, 0.733)
+  );
+border-radius: 3px;
+border: solid rgba(102, 190, 196, 0.733);
+}
+
+section > header{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.code-inst{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration:none;
+}
+
+code > p{
+    color: white;
+    text-align: center;
+}
+.main-section >header{
+    animation-name: main-tit;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes main-tit{
+    10%{
+        color: fuchsia;
+    }
+
+    40%{
+        color:aqua;
+    }
+
+    70%{
+        color:darksalmon;
+    }
+
+    100%{
+        color:beige;
+    }
+}
+
+/*FIN CONTENT*/
+
+
+@media (max-width: 768px){
+/*SIDEBAR*/
+   header{
+       text-align:center;
+        border-left: 0px;
+    }
+
+    .list-group{
+        text-align:start;
+        border-bottom: 2px solid black;
+        width: 98vw;
+        height: 10em;
+    }
+    .list-tit{
+        text-align:center;
+        font-size: 2em;
+        padding-top: 8px;
+        padding-bottom:0px;
+    }
+
+
+    nav{
+        border-top: 2px solid black;
+    }
+
+
+    div:nth-child(1){
+        flex-direction: column;
+    
+    }
+/*FIN SIDEBAR*/
+
+/*CONTENT*/
+    main{
+        margin-top: 170px;
+    }
+    .scrollspy-example{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #remarcar{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p{
+        width: 90%;
+    }
+/*FIN CONTENT*/
+
+}
